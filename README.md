@@ -1,3 +1,4 @@
 #	wp-dockerizado
 git clone https://github.com/PabloCarrai/wp-dockerizado.git <br>
-docker-compose up -d
+cd wp-dockerizado <br>
+docker-compose up -d <br>
