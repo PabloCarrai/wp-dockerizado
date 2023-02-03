@@ -23,6 +23,7 @@ services:
     volumes:
       - './html:/var/www/html'
       - './plugins/password-protected/:/var/www/html/wp-content/plugins/password-protected'
+      - './plugins/wp-mail-smtp/:/var/www/html/wp-content/plugins/wp-mail-smtp'
       - './uploads.ini:/usr/local/etc/php/conf.d/uploads.ini'
     ports:
       - '80:80'
