@@ -2,6 +2,7 @@ version: '3.3'
 services:
   db:
     image: mariadb
+    container_name: db
     env_file:
       - ./.env
     volumes:
@@ -19,6 +20,7 @@ services:
       - db
     image: 'wordpress:latest'
     env_file:
+    container_name: wp
       - ./.env
     volumes:
       - './html:/var/www/html'
