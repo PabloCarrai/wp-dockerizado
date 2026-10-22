@@ -1,7 +1,7 @@
 services:
   db:
     container_name: db
-    image: mariadb	
+    image: 'mariadb:latest'
     env_file:
       - ./.env
     volumes:
